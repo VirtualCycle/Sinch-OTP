@@ -1,0 +1,47 @@
+.header {
+    padding: 40px 15px;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.sendOTP {
+    margin-top: 200px;
+    margin-left: 600px;
+}
+
+#cCode {
+    float: left;
+    width: 4%;
+    margin-right: 3%;
+}
+
+#mobNumber {
+    float: left;
+    width: 20%;
+}
+
+.sendOTP form input {
+    width: 100%;
+    padding: 9px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dcdada;
+}
+
+#btn {
+    width: 100px;
+}
+
+.sendOTP form label {
+    font-size: 24px;
+    color: #8e999e;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+#success h1 {
+    font-size: 50px;
+    color: #5cb85c;
+}

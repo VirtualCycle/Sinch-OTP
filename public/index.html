@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Otp Application</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8"> -->
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>GeekSkool OTP</h1>
+    </div>
+    <div class="sendOTP" id="send" style="display:">
+        <form action="/sinchtest" method="POST" onSubmit="callverify()">
+            <label for="sendOTP">Enter your phone number</label>
+            <br>
+            <input id="cCode" type="text" name="countryCode" placeholder="91">
+            <input id="mobNumber" type="text" name="number" placeholder="99XXXXXXXX">
+            <br>
+            <br>
+            <div id="btn">
+                <input type="submit" name="name" value="Send OTP" id="btn-p">
+            </div>
+        </form>
+    </div>
+    <div class="sendOTP" id="verify" style="display:none">
+        <form action="/verifyotp" method="POST">
+            <label for="verifyOTP">MSG sent to :</label>
+            <br>
+            <input id="mobNumber" type="text" name="code" placeholder="Enter Pin">
+            <br>
+            <br>
+            <div id="btn">
+                <input type="submit" name="name" value="Verify" id="btn-p">
+            </div>
+        </form>
+        <div id="failure">
+        </div>
+        <div id="success" style="display: none">
+            <h1>Congratulations!</h1>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
